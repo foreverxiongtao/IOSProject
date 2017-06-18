@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第一个app&quot;</string>
+		<key>img</key>
+		<string>ic_qq.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第二个app&quot;</string>
+		<key>img</key>
+		<string>ic_qq.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第三个app&quot;</string>
+		<key>img</key>
+		<string>tab_main_icon_selected.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第四个app&quot;</string>
+		<key>img</key>
+		<string>ic_qq.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第五个app&quot;</string>
+		<key>img</key>
+		<string>ic_qq.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第六个app&quot;</string>
+		<key>img</key>
+		<string>tab_main_icon_selected.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第七个app&quot;</string>
+		<key>img</key>
+		<string>ic_qq.png</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>&quot;第八个app&quot;</string>
+		<key>img</key>
+		<string>ic_qq.png</string>
+	</dict>
+</array>
+</plist>
