@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DeApp.h"
 @interface DeAppView : UIView
-
+@property (strong, nonatomic) IBOutlet UIImageView *ivIcong;
+@property (strong, nonatomic) IBOutlet UILabel *lbDesc;
+@property(strong,nonatomic) DeApp *app;
+- (IBAction)btnDownload:(UIButton *)sender;
+-(instancetype) getDeAppView;
++(instancetype)appView;
 @end
