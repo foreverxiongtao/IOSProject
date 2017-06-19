@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E6DD3BE1EF783740045B329 /* app.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DD3BD1EF783740045B329 /* app.xib */; };
+		9E6DD3C11EF784500045B329 /* DeAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DD3C01EF784500045B329 /* DeAppView.m */; };
 		9EBFEBEF1EF67BF200FFA9FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEBEE1EF67BF200FFA9FC /* main.m */; };
 		9EBFEBF21EF67BF200FFA9FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEBF11EF67BF200FFA9FC /* AppDelegate.m */; };
 		9EBFEBF51EF67BF200FFA9FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEBF41EF67BF200FFA9FC /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E6DD3BD1EF783740045B329 /* app.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = app.xib; sourceTree = "<group>"; };
+		9E6DD3BF1EF784500045B329 /* DeAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeAppView.h; sourceTree = "<group>"; };
+		9E6DD3C01EF784500045B329 /* DeAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeAppView.m; sourceTree = "<group>"; };
 		9EBFEBEA1EF67BF200FFA9FC /* 九宫格下载.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "九宫格下载.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBFEBEE1EF67BF200FFA9FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBFEBF01EF67BF200FFA9FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +122,8 @@
 				9EBFEBED1EF67BF200FFA9FC /* Supporting Files */,
 				9EBFEC221EF6BAE100FFA9FC /* DeApp.h */,
 				9EBFEC231EF6BAE100FFA9FC /* DeApp.m */,
+				9E6DD3BF1EF784500045B329 /* DeAppView.h */,
+				9E6DD3C01EF784500045B329 /* DeAppView.m */,
 			);
 			path = "九宫格下载";
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 		9EBFEBED1EF67BF200FFA9FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E6DD3BD1EF783740045B329 /* app.xib */,
 				9EBFEC201EF6B74F00FFA9FC /* data.plist */,
 				9EBFEBEE1EF67BF200FFA9FC /* main.m */,
 			);
@@ -251,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6DD3BE1EF783740045B329 /* app.xib in Resources */,
 				9EBFEBFD1EF67BF200FFA9FC /* LaunchScreen.storyboard in Resources */,
 				9EBFEBFA1EF67BF200FFA9FC /* Assets.xcassets in Resources */,
 				9EBFEC211EF6B74F00FFA9FC /* data.plist in Resources */,
@@ -281,6 +290,7 @@
 			files = (
 				9EBFEC241EF6BAE100FFA9FC /* DeApp.m in Sources */,
 				9EBFEBF51EF67BF200FFA9FC /* ViewController.m in Sources */,
+				9E6DD3C11EF784500045B329 /* DeAppView.m in Sources */,
 				9EBFEBF21EF67BF200FFA9FC /* AppDelegate.m in Sources */,
 				9EBFEBEF1EF67BF200FFA9FC /* main.m in Sources */,
 			);
@@ -506,6 +516,7 @@
 				9EBFEC191EF67BF200FFA9FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EBFEC1A1EF67BF200FFA9FC /* Build configuration list for PBXNativeTarget "九宫格下载Tests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +525,7 @@
 				9EBFEC1C1EF67BF200FFA9FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EBFEC1D1EF67BF200FFA9FC /* Build configuration list for PBXNativeTarget "九宫格下载UITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +534,7 @@
 				9EBFEC1F1EF67BF200FFA9FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
