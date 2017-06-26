@@ -15,6 +15,7 @@
         self.icon=dic[@"icon"];
         self.title=dic[@"title"];
         self.answer=dic[@"answer"];
+        self.options=dic[@"options"];
     }
     return self;
 }

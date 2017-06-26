@@ -94,6 +94,7 @@
     self.lb_title.text=question.title;
     [self.btn_content_img setImage:[UIImage imageNamed:question.icon] forState:UIControlStateNormal];
     [self generateDataForAnsWerView:question];
+    [self generateDataForOptionView:question];
 }
 
 /***
@@ -118,6 +119,33 @@
         }
         
     }
+}
+
+
+-(void)generateDataForOptionView:(DeQuestion *)question{
+    if (question!=nil) {
+        int colCount=6;
+        CGFloat margin=15;
+        CGFloat width=30;
+        CGFloat height=30;
+        CGFloat orgin_x=(self.option_view.frame.size.width-(width*colCount)-(margin*(colCount-1)))*0.5;
+        NSArray *options=question.options;
+        for (int i=0; i<options.count; i++) {
+            NSString *option=options[i];
+            int rowIndex=i/colCount;
+            int colIndex=i%colCount;
+            int x=orgin_x+(width+margin)*colIndex;
+            int y=(height+margin)*rowIndex;
+            UIButton *button=[[UIButton alloc]initWithFrame:CGRectMake(x, y, width, height)];
+            [button setTitle:option forState:UIControlStateNormal];
+            [button setBackgroundImage:[UIImage imageNamed:@"btn_answer"] forState:UIControlStateNormal];
+            [button setBackgroundImage:[UIImage imageNamed:@"btn_answer_highlighted"] forState:UIControlStateHighlighted];
+            [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [self.option_view addSubview:button];
+        }
+    }
+
+
 }
 
 

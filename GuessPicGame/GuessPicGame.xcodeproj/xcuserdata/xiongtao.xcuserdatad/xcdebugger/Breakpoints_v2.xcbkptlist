@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessPicGame/ViewController.m"
-            timestampString = "520170232.546669"
+            timestampString = "520180915.601912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "-createBigImg"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessPicGame/ViewController.m"
-            timestampString = "520170232.546669"
+            timestampString = "520180915.601912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "-createBigImg"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessPicGame/ViewController.m"
-            timestampString = "520170232.546669"
+            timestampString = "520180915.601912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "-createBigImg"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessPicGame/ViewController.m"
-            timestampString = "520170232.546669"
+            timestampString = "520180915.601912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "-createBigImg"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,12 +122,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessPicGame/ViewController.m"
-            timestampString = "520170232.546669"
+            timestampString = "520180105.031745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-generateDataForAnsWerView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuessPicGame/ViewController.m"
+            timestampString = "520180157.38499"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-generateDataForOptionView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
