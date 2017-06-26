@@ -12,6 +12,7 @@
 @property(copy,nonatomic) NSString *icon;
 @property(copy,nonatomic)NSString *answer;
 @property(copy,nonatomic)NSString *title;
+@property(strong,nonatomic)NSArray *options;
 
 +(instancetype) questionWithDic:(NSDictionary *)dic;
 -(instancetype) initWidhtDic:(NSDictionary *)dic;

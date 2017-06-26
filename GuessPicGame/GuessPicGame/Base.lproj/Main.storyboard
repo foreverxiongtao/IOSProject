@@ -25,7 +25,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Ze5-GR-oIH" userLabel="图片">
                                 <rect key="frame" x="125" y="121" width="125" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Button" backgroundImage="center_img"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kRw-xq-3qt" userLabel="提示">
                                 <rect key="frame" x="8" y="118" width="70" height="25"/>
@@ -89,15 +90,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" id="lsp-Dy-8ac" userLabel="答案">
+                                <rect key="frame" x="0.0" y="261" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="XQX-RH-QgM" userLabel="候选框">
+                                <rect key="frame" x="0.0" y="350" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.9960784912109375" green="0.83921575546264648" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="answer_view" destination="lsp-Dy-8ac" id="Okp-aS-6LK"/>
                         <outlet property="btn_content_img" destination="Ze5-GR-oIH" id="WqU-XQ-D0k"/>
                         <outlet property="btn_score" destination="ofK-X9-LlX" id="dmE-LT-rL9"/>
                         <outlet property="lb_index" destination="PYZ-N4-rgJ" id="OvK-0b-IPb"/>
                         <outlet property="lb_title" destination="KyR-Rg-lS4" id="d94-US-4uN"/>
+                        <outlet property="option_view" destination="XQX-RH-QgM" id="h6y-iX-Jib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,6 +124,7 @@
         <image name="btn_left_highlighted" width="70" height="36"/>
         <image name="btn_right" width="70" height="36"/>
         <image name="btn_right_highlighted" width="70" height="36"/>
+        <image name="center_img" width="165" height="212"/>
         <image name="ic_coin" width="20" height="20"/>
         <image name="icon_help" width="20" height="20"/>
         <image name="icon_img" width="20" height="20"/>

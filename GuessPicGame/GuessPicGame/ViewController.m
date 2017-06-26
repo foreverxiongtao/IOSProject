@@ -25,6 +25,9 @@
 
 - (IBAction)btn_big_img:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutlet UIView *answer_view;
+@property (strong, nonatomic) IBOutlet UIView *option_view;
+
 - (IBAction)btn_tips:(UIButton *)sender;
 @end
 
@@ -87,12 +90,39 @@
  *填充数据
  */
 -(void)fillDataToControl:(DeQuestion *)question{
-    self.lb_index.text=@"1/10";
     self.lb_index.text=[NSString stringWithFormat:@"%d/%ld",self.currentIndex+1,self.questions.count];
     self.lb_title.text=question.title;
     [self.btn_content_img setImage:[UIImage imageNamed:question.icon] forState:UIControlStateNormal];
-    
+    [self generateDataForAnsWerView:question];
 }
+
+/***
+ *生成答案框
+ ***/
+-(void)generateDataForAnsWerView:(DeQuestion *)question{
+    if(question!=nil){
+        /**让答案容器的每个子控件去执行某个方法**/
+        [self.answer_view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        long length= [question.answer length];
+        CGFloat margin=15;
+        CGFloat width=30;
+        CGFloat height=30;
+        CGFloat left=(self.answer_view.frame.size.width-(length*width)-(length-1)*margin)*0.5;
+        for (int i=0; i<length; i++) {
+            UIButton *btn=[[UIButton alloc] init];
+            CGFloat x=left+(margin+width)*i;
+            [btn setBackgroundColor:[UIColor whiteColor]];
+            btn.frame=CGRectMake(x, 0, width, height);
+            [self.answer_view addSubview:btn];
+            
+        }
+        
+    }
+}
+
+
+
+
 
 
 /***
