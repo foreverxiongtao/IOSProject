@@ -114,6 +114,7 @@
             CGFloat x=left+(margin+width)*i;
             [btn setBackgroundColor:[UIColor whiteColor]];
             btn.frame=CGRectMake(x, 0, width, height);
+            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [self.answer_view addSubview:btn];
             
         }
@@ -122,6 +123,9 @@
 }
 
 
+/***
+ *生成候选框
+ ***/
 -(void)generateDataForOptionView:(DeQuestion *)question{
     if (question!=nil) {
         int colCount=6;
@@ -142,12 +146,36 @@
             [button setBackgroundImage:[UIImage imageNamed:@"btn_answer_highlighted"] forState:UIControlStateHighlighted];
             [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [self.option_view addSubview:button];
+            [button addTarget:self action:@selector(setOptionClickListener:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
-
-
 }
 
+
+/***
+ **给候选框设置点击事件
+ **/
+-(void)setOptionClickListener:(UIButton *)sender{
+    BOOL isFull=true;
+    for (UIButton *answer in self.answer_view.subviews) {
+        if(answer.currentTitle==nil){
+            isFull=false;
+        }
+    }
+    if(isFull){/***答案已满**/
+    
+    
+    }
+    else{/**答案没有满**/
+        sender.hidden=true;
+        for (UIButton *answer in self.answer_view.subviews) {
+            if(answer.currentTitle==nil){
+                [answer setTitle:sender.currentTitle forState:UIControlStateNormal];
+                return;
+            }
+        }
+    }
+}
 
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E5744191F022A4D0025BE0F /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E5744181F022A4D0025BE0F /* questions.plist */; };
 		9EBFEC331EFFA12900FFA9FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEC321EFFA12900FFA9FC /* main.m */; };
 		9EBFEC361EFFA12900FFA9FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEC351EFFA12900FFA9FC /* AppDelegate.m */; };
 		9EBFEC391EFFA12900FFA9FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEC381EFFA12900FFA9FC /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		9EBFEC4C1EFFA12900FFA9FC /* GuessPicGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEC4B1EFFA12900FFA9FC /* GuessPicGameTests.m */; };
 		9EBFEC571EFFA12A00FFA9FC /* GuessPicGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEC561EFFA12A00FFA9FC /* GuessPicGameUITests.m */; };
 		9EBFEC701EFFB9D100FFA9FC /* DeQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFEC6F1EFFB9D100FFA9FC /* DeQuestion.m */; };
-		9EBFEC721F014A4200FFA9FC /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EBFEC711F014A4200FFA9FC /* questions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E5744181F022A4D0025BE0F /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = questions.plist; path = "../../../Downloads/01-超级猜图游戏/01-超级猜图游戏/questions.plist"; sourceTree = "<group>"; };
 		9EBFEC2E1EFFA12900FFA9FC /* GuessPicGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessPicGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBFEC321EFFA12900FFA9FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBFEC341EFFA12900FFA9FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		9EBFEC581EFFA12A00FFA9FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EBFEC6E1EFFB9D100FFA9FC /* DeQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeQuestion.h; sourceTree = "<group>"; };
 		9EBFEC6F1EFFB9D100FFA9FC /* DeQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeQuestion.m; sourceTree = "<group>"; };
-		9EBFEC711F014A4200FFA9FC /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = questions.plist; path = "../../../../../Downloads/01-超级猜图游戏/01-超级猜图游戏/questions.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 		9EBFEC311EFFA12900FFA9FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9EBFEC711F014A4200FFA9FC /* questions.plist */,
+				9E5744181F022A4D0025BE0F /* questions.plist */,
 				9EBFEC321EFFA12900FFA9FC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -284,7 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EBFEC411EFFA12900FFA9FC /* LaunchScreen.storyboard in Resources */,
-				9EBFEC721F014A4200FFA9FC /* questions.plist in Resources */,
+				9E5744191F022A4D0025BE0F /* questions.plist in Resources */,
 				9EBFEC3E1EFFA12900FFA9FC /* Assets.xcassets in Resources */,
 				9EBFEC3C1EFFA12900FFA9FC /* Main.storyboard in Resources */,
 			);
