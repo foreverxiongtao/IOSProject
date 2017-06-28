@@ -152,6 +152,7 @@
         CGFloat height=30;
         CGFloat orgin_x=(self.option_view.frame.size.width-(width*colCount)-(margin*(colCount-1)))*0.5;
         NSArray *options=question.options;
+        [self.option_view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
         for (int i=0; i<options.count; i++) {
             NSString *option=options[i];
             int rowIndex=i/colCount;
@@ -207,10 +208,28 @@
         if([string isEqualToString:question.answer]){
             isRight=YES;
         }
+        int offset=-100;
+        if(isRight){
+            offset=100;
+        }
+        [self changeScore:offset];
         for (UIButton *btn in self.answer_view.subviews) {
             [self switchAnswerView:btn AndResult:isRight];
         }
+        
+        [self performSelector:@selector(nextQuestion) withObject:nil afterDelay:0.5];
     }
+}
+
+
+
+/***
+ **修改分数
+ */
+-(void)changeScore:(int)offset{
+    int currentScore=self.btn_score.currentTitle.intValue;
+    currentScore+=offset;
+    [self.btn_score setTitle:[NSString stringWithFormat:@"%d",currentScore] forState:UIControlStateNormal];
 }
 
 
@@ -222,9 +241,9 @@
     if(btn==nil){
         return;
     }
-    sender.hidden=true;
     [btn setTitle:sender.currentTitle forState:UIControlStateNormal];
     [btn setTag:sender.tag];
+    sender.hidden=YES;
     [self check];
 }
 
@@ -279,6 +298,10 @@
     self.currentIndex++;
     if(self.currentIndex>=self.questions.count){
         return;
+    }
+    /**下一题时清空答案*/
+    for (UIButton *btn in self.answer_view.subviews) {
+        [btn setTitle:@"" forState:UIControlStateNormal];
     }
     [self fillDataToControl:self.questions[self.currentIndex]];
     
