@@ -117,7 +117,7 @@
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [self.answer_view addSubview:btn];
             [btn addTarget:self action:@selector(setOnAnswerViewClickLisnter:) forControlEvents:UIControlEventTouchUpInside];
-        
+            
         }
         
     }
@@ -136,7 +136,7 @@
             return;
         }
     }
-
+    
 }
 
 
@@ -170,31 +170,62 @@
     }
 }
 
+-(void)switchAnswerView:(UIButton *)sender AndResult:(Boolean )isRight{
+    if(isRight){
+        [sender setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    }
+    else{
+        [sender setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    }
+}
+
+-(UIButton *)findFirstEmptyAnswerView{
+    for (UIButton *btn in self.answer_view.subviews) {
+        if(btn.currentTitle.length==0){
+            return btn;
+        }
+    }
+    return nil;
+}
+
+
+
+-(void)check{
+    Boolean isFull=true;
+    NSMutableString *string=[NSMutableString string];
+    for (UIButton *answer in self.answer_view.subviews) {
+        if(answer.currentTitle.length==0){
+            isFull=false;
+        }
+        else{
+            [string appendString:answer.currentTitle];
+        }
+    }
+    if(isFull){/***答案已满**/
+        DeQuestion *question=self.questions[self.currentIndex];
+        Boolean isRight=NO;
+        if([string isEqualToString:question.answer]){
+            isRight=YES;
+        }
+        for (UIButton *btn in self.answer_view.subviews) {
+            [self switchAnswerView:btn AndResult:isRight];
+        }
+    }
+}
+
 
 /***
  **给候选框设置点击事件
  **/
 -(void)setOptionClickListener:(UIButton *)sender{
-    BOOL isFull=true;
-    for (UIButton *answer in self.answer_view.subviews) {
-        if(answer.currentTitle==nil||answer.currentTitle==@""){
-            isFull=false;
-        }
+    UIButton *btn=[self findFirstEmptyAnswerView];
+    if(btn==nil){
+        return;
     }
-    if(isFull){/***答案已满**/
-    
-    
-    }
-    else{/**答案没有满**/
-        sender.hidden=true;
-        for (UIButton *answer in self.answer_view.subviews) {
-            if(answer.currentTitle==nil||answer.currentTitle==@""){
-                [answer setTitle:sender.currentTitle forState:UIControlStateNormal];
-                [answer setTag:sender.tag];
-                return;
-            }
-        }
-    }
+    sender.hidden=true;
+    [btn setTitle:sender.currentTitle forState:UIControlStateNormal];
+    [btn setTag:sender.tag];
+    [self check];
 }
 
 

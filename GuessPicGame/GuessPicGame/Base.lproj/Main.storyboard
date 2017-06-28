@@ -96,7 +96,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="XQX-RH-QgM" userLabel="候选框">
-                                <rect key="frame" x="0.0" y="350" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="350" width="375" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
