@@ -116,11 +116,29 @@
             btn.frame=CGRectMake(x, 0, width, height);
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [self.answer_view addSubview:btn];
-            
+            [btn addTarget:self action:@selector(setOnAnswerViewClickLisnter:) forControlEvents:UIControlEventTouchUpInside];
+        
         }
         
     }
 }
+
+
+/***
+ **答案按钮点击事件
+ */
+-(void)setOnAnswerViewClickLisnter:(UIButton *)sender{
+    NSInteger tag=sender.tag;
+    [sender setTitle:@"" forState:UIControlStateNormal];
+    for (UIButton *btn in self.option_view.subviews) {
+        if(btn.tag==tag){
+            btn.hidden=false;
+            return;
+        }
+    }
+
+}
+
 
 
 /***
@@ -147,6 +165,7 @@
             [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [self.option_view addSubview:button];
             [button addTarget:self action:@selector(setOptionClickListener:) forControlEvents:UIControlEventTouchUpInside];
+            [button setTag:i];
         }
     }
 }
@@ -158,7 +177,7 @@
 -(void)setOptionClickListener:(UIButton *)sender{
     BOOL isFull=true;
     for (UIButton *answer in self.answer_view.subviews) {
-        if(answer.currentTitle==nil){
+        if(answer.currentTitle==nil||answer.currentTitle==@""){
             isFull=false;
         }
     }
@@ -169,8 +188,9 @@
     else{/**答案没有满**/
         sender.hidden=true;
         for (UIButton *answer in self.answer_view.subviews) {
-            if(answer.currentTitle==nil){
+            if(answer.currentTitle==nil||answer.currentTitle==@""){
                 [answer setTitle:sender.currentTitle forState:UIControlStateNormal];
+                [answer setTag:sender.tag];
                 return;
             }
         }
