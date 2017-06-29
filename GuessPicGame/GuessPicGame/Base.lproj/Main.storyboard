@@ -107,6 +107,7 @@
                     <connections>
                         <outlet property="answer_view" destination="lsp-Dy-8ac" id="Okp-aS-6LK"/>
                         <outlet property="btn_content_img" destination="Ze5-GR-oIH" id="WqU-XQ-D0k"/>
+                        <outlet property="btn_next_question" destination="5ad-CX-dio" id="hxQ-m1-ns2"/>
                         <outlet property="btn_score" destination="ofK-X9-LlX" id="dmE-LT-rL9"/>
                         <outlet property="lb_index" destination="PYZ-N4-rgJ" id="OvK-0b-IPb"/>
                         <outlet property="lb_title" destination="KyR-Rg-lS4" id="d94-US-4uN"/>

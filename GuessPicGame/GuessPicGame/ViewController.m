@@ -29,6 +29,9 @@
 @property (strong, nonatomic) IBOutlet UIView *option_view;
 
 - (IBAction)btn_tips:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *btn_next_question;
+
 @end
 
 @implementation ViewController
@@ -216,7 +219,6 @@
         for (UIButton *btn in self.answer_view.subviews) {
             [self switchAnswerView:btn AndResult:isRight];
         }
-        
         [self performSelector:@selector(nextQuestion) withObject:nil afterDelay:0.5];
     }
 }
@@ -297,11 +299,35 @@
  **下一个问题
  */
 -(void)nextQuestion{
+    /**下一题时清空答案*/
     self.currentIndex++;
     if(self.currentIndex>=self.questions.count){
+        if (self.btn_score.currentTitle.integerValue==2000) {
+            UIAlertController *alertView=[UIAlertController alertControllerWithTitle:@"提示" message:@"恭喜通关" preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *confirm=[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [alertView addAction:confirm];
+            [self presentViewController:alertView animated:true completion:^{
+                
+            }];
+            return;
+        }
+        UIAlertController *alertView=[UIAlertController alertControllerWithTitle:@"提示" message:@"最后一题" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *confirm=[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alertView addAction:confirm];
+        [self presentViewController:alertView animated:true completion:^{
+            
+        }];
         return;
     }
-    /**下一题时清空答案*/
+    if(self.currentIndex>=self.questions.count-1){
+        self.btn_next_question.enabled=NO;
+    }
     for (UIButton *btn in self.answer_view.subviews) {
         [btn setTitle:@"" forState:UIControlStateNormal];
     }
