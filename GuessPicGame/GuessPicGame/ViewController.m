@@ -233,6 +233,8 @@
 }
 
 
+
+
 /***
  **给候选框设置点击事件
  **/
@@ -313,10 +315,12 @@
 }
 
 - (IBAction)btn_next_question:(UIButton *)sender {
+    [self changeScore:-100];
     [self nextQuestion];
 }
 
 - (IBAction)btn_help:(UIButton *)sender {
+ 
 }
 
 - (IBAction)btn_big_img:(UIButton *)sender {
@@ -324,5 +328,14 @@
 }
 
 - (IBAction)btn_tips:(UIButton *)sender {
+    DeQuestion *question=self.questions[self.currentIndex];
+    NSString *first=[question.answer substringToIndex:1];
+    for (UIButton *option in self.option_view.subviews) {
+        if ([option.currentTitle isEqualToString:first]) {
+            [self setOptionClickListener:option];
+            [self changeScore:-100];
+            return;
+        }
+    }
 }
 @end
