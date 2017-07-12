@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *iv_content;
 @property (weak, nonatomic) IBOutlet UIScrollView *sv_container;
 - (IBAction)offset:(UIButton *)sender;
@@ -30,10 +30,15 @@
     self.sv_container.showsVerticalScrollIndicator=NO;
     self.sv_container.bounces=YES;
     self.sv_container.contentInset=UIEdgeInsetsMake(100, 50, 20, 200);
-    
-
+    [self.sv_container setMaximumZoomScale:2];
+    [self.sv_container setMinimumZoomScale:0.5];
+    self.sv_container.delegate=self;
 }
 
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+
+    return self.iv_content;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
