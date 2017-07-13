@@ -13,46 +13,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="v7n-pD-GQn">
-                                <rect key="frame" x="0.0" y="40" width="375" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="XQc-fL-IKR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_ad" id="5Yv-te-Fg2">
-                                        <rect key="frame" x="30" y="88" width="145" height="145"/>
+                                        <rect key="frame" x="38" y="58" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_hotsound" id="894-ik-d9k">
-                                        <rect key="frame" x="200" y="88" width="145" height="145"/>
+                                        <rect key="frame" x="193" y="58" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_hotsound" id="OGn-yf-M26">
-                                        <rect key="frame" x="200" y="253" width="145" height="145"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_newpeople" id="OGn-yf-M26">
+                                        <rect key="frame" x="193" y="243" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_hotsound" id="WQ1-W7-VC5">
-                                        <rect key="frame" x="200" y="418" width="145" height="145"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_wallspoint" id="WQ1-W7-VC5">
+                                        <rect key="frame" x="193" y="428" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_hotsound" id="Lm0-7s-Bf2">
-                                        <rect key="frame" x="30" y="418" width="145" height="145"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_newsound" id="Lm0-7s-Bf2">
+                                        <rect key="frame" x="38" y="428" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_ad" id="CR0-dB-Z6U">
-                                        <rect key="frame" x="30" y="253" width="145" height="145"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finditem_hotpeople" id="CR0-dB-Z6U">
+                                        <rect key="frame" x="38" y="243" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
+                            <view contentMode="scaleToFill" id="dP6-sV-OQc">
+                                <rect key="frame" x="0.0" y="625" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sS3-Uh-zpo">
+                                        <rect key="frame" x="9" y="0.0" width="64" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tab_home_n"/>
+                                        <state key="highlighted" image="tab_home_h"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u7m-TM-jtn">
+                                        <rect key="frame" x="82" y="0.0" width="64" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tab_relay_n"/>
+                                        <state key="highlighted" image="tab_relay_h"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Plc-tp-sPc">
+                                        <rect key="frame" x="156" y="0.0" width="64" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tab_share_n"/>
+                                        <state key="highlighted" image="tab_share_h"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sa7-VT-2r1">
+                                        <rect key="frame" x="229" y="0.0" width="64" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tab_comment_n"/>
+                                        <state key="highlighted" image="tab_comment_h"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="meC-2d-48I">
+                                        <rect key="frame" x="302" y="0.0" width="64" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tab_more_n"/>
+                                        <state key="highlighted" image="tab_more_h"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="v7n-pD-GQn">
+                                <rect key="frame" x="0.0" y="40" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="buttom_container_tab" destination="dP6-sV-OQc" id="Gd5-lR-L8a"/>
+                        <outlet property="iv_new_play_show" destination="Lm0-7s-Bf2" id="uAJ-si-sXo"/>
                         <outlet property="scrollview" destination="XQc-fL-IKR" id="NRP-Uo-N50"/>
                         <outlet property="title_bar_container" destination="v7n-pD-GQn" id="7HS-S8-so4"/>
                     </connections>
@@ -64,6 +103,20 @@
     </scenes>
     <resources>
         <image name="finditem_ad" width="145" height="145"/>
+        <image name="finditem_hotpeople" width="145" height="145"/>
         <image name="finditem_hotsound" width="145" height="145"/>
+        <image name="finditem_newpeople" width="145" height="145"/>
+        <image name="finditem_newsound" width="145" height="145"/>
+        <image name="finditem_wallspoint" width="145" height="145"/>
+        <image name="tab_comment_h" width="64" height="45"/>
+        <image name="tab_comment_n" width="64" height="45"/>
+        <image name="tab_home_h" width="64" height="45"/>
+        <image name="tab_home_n" width="64" height="45"/>
+        <image name="tab_more_h" width="64" height="45"/>
+        <image name="tab_more_n" width="64" height="45"/>
+        <image name="tab_relay_h" width="64" height="45"/>
+        <image name="tab_relay_n" width="64" height="45"/>
+        <image name="tab_share_h" width="64" height="45"/>
+        <image name="tab_share_n" width="64" height="45"/>
     </resources>
 </document>
