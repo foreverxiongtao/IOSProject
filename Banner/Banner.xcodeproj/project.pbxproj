@@ -416,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Banner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = desperado.Banner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Banner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = desperado.Banner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +500,7 @@
 				4F7A2EC31F18964400E363BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F7A2EC41F18964400E363BC /* Build configuration list for PBXNativeTarget "BannerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +509,7 @@
 				4F7A2EC61F18964400E363BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F7A2EC71F18964400E363BC /* Build configuration list for PBXNativeTarget "BannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +518,7 @@
 				4F7A2EC91F18964400E363BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
