@@ -118,7 +118,6 @@
 		9EBFEC311EFFA12900FFA9FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9EBFEC731F08DAD200FFA9FC /* questions.plist */,
 				9EBFEC321EFFA12900FFA9FC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -174,6 +173,7 @@
 		9EBFEC671EFFA48200FFA9FC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9EBFEC731F08DAD200FFA9FC /* questions.plist */,
 				9EBFEC421EFFA12900FFA9FC /* Info.plist */,
 				9EBFEC3D1EFFA12900FFA9FC /* Assets.xcassets */,
 			);

@@ -4,13 +4,13 @@
 <array>
 	<dict>
 		<key>desc</key>
-		<string>&quot;第一个app&quot;</string>
+		<string>第一个app</string>
 		<key>img</key>
 		<string>ic_qq.png</string>
 	</dict>
 	<dict>
 		<key>desc</key>
-		<string>&quot;第二个app&quot;</string>
+		<string>第二个app</string>
 		<key>img</key>
 		<string>ic_qq.png</string>
 	</dict>
